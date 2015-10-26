@@ -30,7 +30,7 @@ module Lita
         private
 
         def dispatch(message)
-          channel_text = " in #{message.source.room}" if message.source.room
+          channel_text = "in #{message.source.room}" if message.source.room
           Lita.logger.debug(<<-MSG.chomp
 #{channel_text}>[#{message.source.user.name}] #{message.body}
 MSG
