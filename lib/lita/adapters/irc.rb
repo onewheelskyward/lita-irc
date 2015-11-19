@@ -87,6 +87,7 @@ module Lita
           cinch_config.user = config.user if config.user
           cinch_config.password = config.password if config.password
           cinch_config.realname = config.realname if config.realname
+          Lita.logger.debug "Configuring cinch to connect to #{config.server} on #{channels.inspect} as #{robot.config.robot.name}"
         end
       end
 
